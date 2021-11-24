@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  width: 100%;
+}
+
+.instagram-wrapper {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: start;
+  width: 60%;
+}
+
+.instagram-phone {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.instagram-phone img {
+  height: 50rem;
+}
+
+.instagram-continue {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 34rem;
+  width: 50%;
+}
+
+.group {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+  width: 100%;
+}
+
+.group:nth-child(1) {
+  min-height: 19rem;
+}
+
+.instagram-logo {
+  height: 3rem;
+}
+
+.profile-photo {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  height: 6rem;
+  width: 6rem;
+}
+
+.instagram-login {
+  background-color: #0095f6;
+  border-radius: 4px;
+  color: #fff;
+  padding: 8px;
+}
+
+.instagram-logout {
+  color: #0096f6;
+  margin-top: 1rem;
+}
+
+.not-account {
+  color: rgb(160, 160, 160);
+}
+
+.link-blue {
+  color: #0096f6;
+}
+
+.get-the-app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.3rem 0;
+  width: 100%;
+}
+
+.download {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  width: 100%;
+}
+
+.app-download {
+  background-size: cover;
+  height: 4rem;
+  width: 10rem;
+}
+
+.app-download:nth-child(1) {
+  background-image: url('../image/app-store-logo.png');
+}
+
+.app-download:nth-child(2) {
+  background-image: url('../image/google-play-logo.png');
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: #fff;
+  }
+
+  .instagram-wrapper {
+    width: 90%;
+  }
+
+  .instagram-phone {
+    display: none;
+  }
+
+  .instagram-continue {
+    width: 100%;
+  }
+
+  .group{
+    border: 1px solid transparent;
+  }
+}
